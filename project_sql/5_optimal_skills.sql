@@ -1,3 +1,11 @@
+/* 
+Query 5: Skills with Both High Demand & High Pay  
+- Combine demand (frequency of skills) with salary averages.  
+- Highlight skills that score well in both metrics.  
+- Why? To prioritize skills that balance strong demand and high salaries.  
+*/
+
+
 WITH top_demanded_skills AS (  
     SELECT
         skills_dim.skill_id,

@@ -1,3 +1,12 @@
+/* 
+Query 1: Top 10 Highest Paying Remote Data Analyst Jobs  
+- Focus on remote-friendly Data Analyst roles.  
+- Filter only jobs with non-null salaries.  
+- Rank and display the top 10 highest-paying roles.  
+- Why? To highlight the most financially rewarding opportunities for remote analysts.  
+*/
+
+
 SELECT
     job_id,
     job_title,

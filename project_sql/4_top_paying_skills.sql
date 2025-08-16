@@ -1,3 +1,12 @@
+/* 
+Query 4: Highest Paying Skills for Remote Data Analysts  
+- Calculate average salary per skill.  
+- Focus on remote roles with valid salaries.  
+- Rank skills by highest average salary.  
+- Why? To show which skills provide the strongest financial return.  
+*/
+
+
 SELECT
     skills AS skill_name,
     ROUND (AVG (salary_year_avg), 0) AS avg_salary
@@ -14,6 +23,12 @@ ORDER BY avg_salary DESC
 LIMIT 30
 
 /*
+Results Insight:  
+- Big Data tools (PySpark, Databricks, Hadoop) lead with the highest salaries.  
+- DevOps & Collaboration tools (Bitbucket, GitLab, Kubernetes) also offer premium pay.  
+- Advanced libraries (Pandas, NumPy, Scikit-learn) highlight the value of analytics skills.  
+
+
 [
   {
     "skill_name": "pyspark",
