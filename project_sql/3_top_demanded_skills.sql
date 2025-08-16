@@ -1,8 +1,8 @@
 /* 
-Query 3: Top 5 Most Demanded Skills for Remote Data Analysts  
+Query 3: Top 10 Most Demanded Skills for Remote Data Analysts  
 - Count skills requested in remote Data Analyst job postings.  
 - Rank by frequency of appearance.  
-- Limit results to the top 5.  
+- Limit results to the top 10.  
 - Why? To help job seekers focus on the most in-demand skills.  
 */
 
@@ -18,4 +18,4 @@ WHERE job_title_short = 'Data Analyst'  AND
     
 GROUP BY skills
 ORDER BY demand_count DESC
-LIMIT 5
+LIMIT 10;
